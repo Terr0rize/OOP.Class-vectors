@@ -4,33 +4,32 @@
 #include <conio.h>
 #include <iomanip>
 #include "vektors.h"
-using namespace std;
-//using std::cout;
-//using std::cin;
-//using std::endl;
-//using std::setprecision;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::setprecision;
 void vektors::sl(double x1, double y1, double x2, double y2)
 {
 	double x, y;
 	x = x1 + x2;
 	y = y1 + y2;
-	cout << "Ðåçóëüòàò ñëîæåíèÿ: Ñ(" << x << "," << y << ",)\n";
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ ÑÐ»Ð¾Ð¶ÐµÐ½Ð¸Ñ: Ð¡(" << x << "," << y << ",)\n";
 };
 void vektors::vich(double x1, double y1, double x2, double y2)
 {
 	double x, y;
 	x = x1 - x2;
 	y = y1 - y2;
-	cout << "Ðåçóëüòàò âû÷èòàíèÿ: Ñ(" << x << "," << y << ")\n";
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ð²Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ñ: Ð¡(" << x << "," << y << ")\n";
 };
 void vektors::proiz(double x1, double y1, double x2, double y2)
 {
 	double ps, pvx, pvy;
 	ps = x1 * x2 + y1 * y2;
-	cout << "Ñêàëÿðíîå ïðîèçâåäåíèå=" << ps << "\n";
+	cout << "Ð¡ÐºÐ°Ð»ÑÑ€Ð½Ð¾Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ=" << ps << "\n";
 	pvx = y1 * x2 - x1 * y2;
 	pvy = x1 * y2 - y1 * x2;
-	cout << "Âåêòîðíîå ïðîèçâåäåíèå: Ñ(" << pvx << "," << pvy << ",)\n";
+	cout << "Ð’ÐµÐºÑ‚Ð¾Ñ€Ð½Ð¾Ðµ Ð¿Ñ€Ð¾Ð¸Ð·Ð²ÐµÐ´ÐµÐ½Ð¸Ðµ: Ð¡(" << pvx << "," << pvy << ",)\n";
 };
 void vektors::dlin(double x1, double y1, double x2, double y2)
 {
@@ -39,8 +38,8 @@ void vektors::dlin(double x1, double y1, double x2, double y2)
 	dlb = sqrt(pow(x2, 2) + pow(y2, 2));
 	//dla = sqrt(pow(x1, 2) + pow(y1, 2) + pow(z1, 2)); 
 	//dlb = sqrt(pow(x2, 2) + pow(y2, 2) + pow(z2, 2)); 
-	cout << "Äëèíà âåêòîðà À=" << setprecision(4) << dla << '\n';
-	cout << "Äëèíà âåêòîðà B=" << setprecision(4) << dlb << '\n';
+	cout << "Ð”Ð»Ð¸Ð½Ð° Ð²ÐµÐºÑ‚Ð¾Ñ€Ð° Ð=" << setprecision(4) << dla << '\n';
+	cout << "Ð”Ð»Ð¸Ð½Ð° Ð²ÐµÐºÑ‚Ð¾Ñ€Ð° B=" << setprecision(4) << dlb << '\n';
 };
 void vektors::cosin(double x1, double y1, double x2, double y2)
 {
