@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <iostream>
 #include <math.h>
 #include <conio.h>
@@ -29,7 +30,8 @@ int main()
 		cout << "3)Найти длину." << endl;
 		cout << "4)Найти косинус. " << endl;
 		cout << "5)Найти произведение(Скалярное и Векторное). " << endl;
-		cout << "6)Выйти из программы.  " << endl;
+		cout << "6)Заполнить данные о векторах заного и вывести меню для выбора операции." << endl;
+		cout << "7)Выйти из программы.  " << endl;
 		cin >> e;
 		switch (e)
 		{
@@ -55,15 +57,23 @@ int main()
 			cout << '\n';
 		}; break;
 		case 6: {
+			cout << "Координаты A: \nx ";
+			cin >> v.x;
+			cout << "y "; cin >> v.y;
+			cout << "\nКоординаты B: \nx ";
+			cin >> v1.x;
+			cout << "y ";
+			cin >> v1.y;
+			cout << '\n';
+		}; break;
+		case 7: {
 			return 0;
 
 		}; break;
 			break;
 		}
-
 	}
-
-while (e != 7);
+	while (e != 7);
 	//perem.sl(v.x, v.y, v1.x, v1.y);
 	//perem.vich(v.x, v.y, v1.x, v1.y);
 	//perem.dlin(v.x, v.y, v1.x, v1.y);
